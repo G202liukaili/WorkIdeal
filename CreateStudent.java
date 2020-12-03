@@ -9,43 +9,43 @@ public class CreateStudent {
 	  
 	  int xuehao;
       String name,major,sex;
-      String path2="E:\\abc\\ceshi";
+//      String path2="E:\\abc\\ceshi";
       CreateFiles cr=new CreateFiles();
       
       public void SubmitWork() throws IOException{
-    	  System.out.println("ÇëÏÈÌîĞ´ÒÔÏÂ¸öÈËĞÅÏ¢ÔÙÌá½»×÷Òµ");
+    	  System.out.println("è¯·å…ˆå¡«å†™ä»¥ä¸‹ä¸ªäººä¿¡æ¯å†æäº¤ä½œä¸š");
     	  Scanner sc=new Scanner(System.in);
     	  FileWriter fw=new FileWriter("E:\\abc\\ceshi\\TextA.txt");
     	 
     	  try{
-    		  fw.write("Ñ§Éú»ù±¾ĞÅÏ¢"+"\r\n");
-    		  System.out.println("Ñ§ºÅ£º"); 
+    		  fw.write("å­¦ç”ŸåŸºæœ¬ä¿¡æ¯"+"\r\n");
+    		  System.out.println("å­¦å·ï¼š"); 
     		  xuehao=sc.nextInt();
-        	  fw.write("Ñ§ºÅ£º"+String.valueOf(xuehao)+"\r\n");//ÈôĞ´ÈëintĞÍÊı¾İÒ»´ÎÖ»ÄÜĞ´½øÈ¥Ò»¸ö ĞèÒª½«Æä×ª»¯ 
-        	  System.out.println("ĞÕÃû£º");
-        	  fw.write("ĞÕÃû£º"+sc.next()+"\r\n");
-        	  System.out.println("ĞÔ±ğ£º");
-        	  fw.write("ĞÔ±ğ£º"+sc.next()+"\r\n");
-        	  System.out.println("×¨Òµ£º");
-        	  fw.write("×¨Òµ£º"+sc.next()+"\r\n");
-        	  fw.write("×÷Òµ£º"+"\r\n");
+        	  fw.write("å­¦å·ï¼š"+String.valueOf(xuehao)+"\r\n");//è‹¥å†™å…¥intå‹æ•°æ®ä¸€æ¬¡åªèƒ½å†™è¿›å»ä¸€ä¸ª éœ€è¦å°†å…¶è½¬åŒ– æˆStringç±»å‹
+        	  System.out.println("å§“åï¼š");
+        	  fw.write("å§“åï¼š"+sc.next()+"\r\n");
+        	  System.out.println("æ€§åˆ«ï¼š");
+        	  fw.write("æ€§åˆ«ï¼š"+sc.next()+"\r\n");
+        	  System.out.println("ä¸“ä¸šï¼š");
+        	  fw.write("ä¸“ä¸šï¼š"+sc.next()+"\r\n");
+        	  fw.write("ä½œä¸šï¼š"+"\r\n");
         	  
         	  fw.flush();
     	      fw.close();
-    	      System.out.println("ÇëÊäÈëÒªÌá½»µÄÎÄ¼ş£º");
+    	      System.out.println("è¯·è¾“å…¥è¦æäº¤çš„æ–‡ä»¶ï¼š");
         	  String n;
         	  n=sc.next();
 //        	  System.out.println(n);   
         	  if(n.equals("TextB")){
         		  cr.createFileB();
         		  cr.readFile();  
-        		System.out.println("Ìá½»³É¹¦£¡£¨¿ÉÔÚTextAÎÄ¼şÖĞ²éÔÄÅú¸ÄĞÅÏ¢£©");  	    		
+        		System.out.println("æäº¤æˆåŠŸï¼ï¼ˆå¯åœ¨TextAæ–‡ä»¶ä¸­æŸ¥é˜…æ‰¹æ”¹ä¿¡æ¯ï¼‰");  	    		
         	  }else{
-        		  System.out.println("ÎÄ¼şÌá½»´íÎó£¡ÇëÖØĞÂÔËĞĞ³ÌĞò£¡");   
+        		  System.out.println("æ–‡ä»¶æäº¤é”™è¯¯ï¼è¯·é‡æ–°è¿è¡Œç¨‹åºï¼");   
         	  }
         	  
          }catch(Exception e){
-        	 System.out.println("¸ñÊ½´íÎó£¬ÖØĞÂ¿ªÊ¼£¡");  
+        	 System.out.println("æ ¼å¼é”™è¯¯ï¼Œé‡æ–°å¼€å§‹ï¼");  
     	  }
     	 
       }
