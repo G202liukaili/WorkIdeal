@@ -111,12 +111,18 @@
 			            }
                   
 > * 检索键盘接收的字符串str，是否包含有字符串str1= " "，如果有则返回一个大于等于0的下标索引（这里注意是返回下标索引，下标索引是从0开始的），没有返回-1。
+3.使用try{}catch(){},来控制学生键盘键入时必须是int型数据。
+
+		catch(Exception e){
+        	 System.out.println("格式错误，重新开始！");  
+    	  }
+	  
 ### 六、系统运行截图
 ![images](https://github.com/G202liukaili/WorkIdeal/blob/main/images/homework.jpg)
 ### 七、实验感想
 1.本次实验是做的最完整的一次，所有功能均已实现。<br/>
 2.一开始向TextA文件中写入定义为int型学号的时候老是失败，后来才知道通过字符流写入数据时int型数据一次只能写进去一个字符，只需使用String.valueOf(xuehao)将其转化成String类型就可写入。<br/>
 3.最初向TextA中写入完学生基本信息之后，再读取另一个文件时的内容时，会将读取到的内容覆盖原来内容，后来发现在使用FileOutputStream(String name,boolean append)时,需要将append的值设为true，方可解决覆盖问题。<br/>
-4.本次实验也加深了我对Scanner类的使用以及对于实例化类的运用。<br/>
+4.本次实验也加深了我对Scanner类的使用、try{}catch(){}、以及对于实例化类的运用。<br/>
 
 
