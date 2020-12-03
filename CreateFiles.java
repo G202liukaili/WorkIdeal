@@ -12,32 +12,32 @@ import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
 public class CreateFiles {
-	 String path= "E:\\abc\\ceshi"; //Ëù´´½¨ÎÄ¼şµÄÂ·¾¶ 
-     String path2="E:\\abc\\ceshi";
+	 String path= "E:\\abc\\ceshi"; //æ‰€åˆ›å»ºæ–‡ä»¶çš„è·¯å¾„ 
+//     String path2="E:\\abc\\ceshi";
      
-     String fileName = "TextB.txt"; //ÎÄ¼şÃû¼°ÀàĞÍ 
-     String fileName2="TextA.txt";
+     String fileName = "TextB.txt"; //æ–‡ä»¶ååŠç±»å‹ 
+//     String fileName2="TextA.txt";
       
-     File file1 = new File("E:\\abc\\ceshi", "TextB.txt"); 
-     static File file0 = new File("E:\\abc\\ceshi", "TextA.txt");
+     File file1 = new File(path, "TextB.txt"); 
+     File file0 = new File(path, "TextA.txt");
      
       
 	public void createFileB() throws IOException{ 
 	         
 	       
-	        String text = "ºº»ÊÖØÉ«Ë¼Çã¹úÓùÓî¶àÄêÇó²»µÃÑî¼ÒÓĞÅ®³õ³¤³ÉÑøÔÚÉî¹ëÈËÎ´Ê¶ÌìÉúÀöÖÊÄÑ×ÔÆúÒ»³¯Ñ¡ÔÚ¾ıÍõ" +
-	        		"²à»ØíøÒ»Ğ¦°ÙÃÄÉúÁù¹¬·Û÷ìÎŞÑÕÉ«´ºº®´ÍÔ¡»ªÇå³ØÎÂÈªË®»¬Ï´ÄıÖ¬ÊÌ¶ù·öÆğ½¿ÎŞÁ¦Ê¼ÊÇĞÂ" +
-	        		"³Ğ¶÷ÔóÊ±ÔÆ÷Ş»¨ÑÕ½ğ²½Ò¡Ü½ÈØÕÊÅ¯¶È´ºÏü´ºÏü¿à¶ÌÈÕ¸ßÆğ´Ó´Ë¾ıÍõ²»Ôç³¯³Ğ»¶ÊÌÑçÎŞÏĞÏ¾´º´Ó´ºÓÎÒ¹×¨" +
-	        		"Ò¹ºó¹¬¼ÑÀöÈıÇ§ÈËÈıÇ§³è°®ÔÚÒ»Éí½ğÎİ×±³É½¿ÊÌÒ¹ÓñÂ¥Ñç°Õ×íºÍ´ºæ¢ÃÃµÜĞÖ½ÔÁĞÊ¿¿ÉÁ¯¹â²ÉÉúÃÅ»§ËìÁîÌìÏÂ¸¸Ä¸ĞÄ" +
-	        		"²»ÖØÉúÄĞÖØÉúÅ®æê¹¬¸ß´¦ÈëÇàÔÆÏÉÀÖ·çÆ®´¦´¦ÎÅ»º¸èÂıÎèÄıË¿Öñ¾¡ÈÕ¾ıÍõ¿´²»×ãÓæÑôÜ±¹Ä¶¯µØÀ´¾ªÆÆÄŞÉÑÓğÒÂÇú¾Å" +
-	        		"ÖØ³ÇãÚÑÌ³¾ÉúÇ§³ËÍòÆïÎ÷ÄÏĞĞ";
+	        String text = "æ±‰çš‡é‡è‰²æ€å€¾å›½å¾¡å®‡å¤šå¹´æ±‚ä¸å¾—æ¨å®¶æœ‰å¥³åˆé•¿æˆå…»åœ¨æ·±é—ºäººæœªè¯†å¤©ç”Ÿä¸½è´¨éš¾è‡ªå¼ƒä¸€æœé€‰åœ¨å›ç‹" +
+	        		"ä¾§å›çœ¸ä¸€ç¬‘ç™¾åªšç”Ÿå…­å®«ç²‰é»›æ— é¢œè‰²æ˜¥å¯’èµæµ´åæ¸…æ± æ¸©æ³‰æ°´æ»‘æ´—å‡è„‚ä¾å„¿æ‰¶èµ·å¨‡æ— åŠ›å§‹æ˜¯æ–°" +
+	        		"æ‰¿æ©æ³½æ—¶äº‘é¬“èŠ±é¢œé‡‘æ­¥æ‘‡èŠ™è“‰å¸æš–åº¦æ˜¥å®µæ˜¥å®µè‹¦çŸ­æ—¥é«˜èµ·ä»æ­¤å›ç‹ä¸æ—©æœæ‰¿æ¬¢ä¾å®´æ— é—²æš‡æ˜¥ä»æ˜¥æ¸¸å¤œä¸“" +
+	        		"å¤œåå®«ä½³ä¸½ä¸‰åƒäººä¸‰åƒå® çˆ±åœ¨ä¸€èº«é‡‘å±‹å¦†æˆå¨‡ä¾å¤œç‰æ¥¼å®´ç½¢é†‰å’Œæ˜¥å§Šå¦¹å¼Ÿå…„çš†åˆ—å£«å¯æ€œå…‰é‡‡ç”Ÿé—¨æˆ·é‚ä»¤å¤©ä¸‹çˆ¶æ¯å¿ƒ" +
+	        		"ä¸é‡ç”Ÿç”·é‡ç”Ÿå¥³éªŠå®«é«˜å¤„å…¥é’äº‘ä»™ä¹é£é£˜å¤„å¤„é—»ç¼“æ­Œæ…¢èˆå‡ä¸ç«¹å°½æ—¥å›ç‹çœ‹ä¸è¶³æ¸”é˜³é¼™é¼“åŠ¨åœ°æ¥æƒŠç ´éœ“è£³ç¾½è¡£æ›²ä¹" +
+	        		"é‡åŸé˜™çƒŸå°˜ç”Ÿåƒä¹˜ä¸‡éª‘è¥¿å—è¡Œ";
 
 	       
-	        File f = new File("E:\\abc\\ceshi"); 
+	        File f = new File(path); 
 	         
 	        if(!f.exists()){ 
 	             
-	            f.mkdirs(); //´´½¨Ä¿Â¼ 
+	            f.mkdirs(); //åˆ›å»ºç›®å½• 
 	        } 
 	         
 	       
@@ -69,28 +69,28 @@ public class CreateFiles {
 	    } 
 	  public void readFile() {
 	        String pathname = "E:\\abc\\ceshi\\TextB.txt";
-	        // ¾ø¶ÔÂ·¾¶»òÏà¶ÔÂ·¾¶¶¼¿ÉÒÔ£¬Ğ´ÈëÎÄ¼şÊ±ÑİÊ¾Ïà¶ÔÂ·¾¶,¶ÁÈ¡ÒÔÉÏÂ·¾¶µÄinput.txtÎÄ¼ş
-	        //·ÀÖ¹ÎÄ¼ş½¨Á¢»ò¶ÁÈ¡Ê§°Ü£¬ÓÃcatch²¶×½´íÎó²¢´òÓ¡£¬Ò²¿ÉÒÔthrow;
-	        //²»¹Ø±ÕÎÄ¼ş»áµ¼ÖÂ×ÊÔ´µÄĞ¹Â¶£¬¶ÁĞ´ÎÄ¼ş¶¼Í¬Àí
-	        //Java7µÄtry-with-resources¿ÉÒÔÓÅÑÅ¹Ø±ÕÎÄ¼ş£¬Òì³£Ê±×Ô¶¯¹Ø±ÕÎÄ¼ş£»ÏêÏ¸½â¶Áhttps://stackoverflow.com/a/12665271
+	        // ç»å¯¹è·¯å¾„æˆ–ç›¸å¯¹è·¯å¾„éƒ½å¯ä»¥ï¼Œå†™å…¥æ–‡ä»¶æ—¶æ¼”ç¤ºç›¸å¯¹è·¯å¾„,è¯»å–ä»¥ä¸Šè·¯å¾„çš„input.txtæ–‡ä»¶
+	        //é˜²æ­¢æ–‡ä»¶å»ºç«‹æˆ–è¯»å–å¤±è´¥ï¼Œç”¨catchæ•æ‰é”™è¯¯å¹¶æ‰“å°ï¼Œä¹Ÿå¯ä»¥throw;
+	        //ä¸å…³é—­æ–‡ä»¶ä¼šå¯¼è‡´èµ„æºçš„æ³„éœ²ï¼Œè¯»å†™æ–‡ä»¶éƒ½åŒç†
+	        //Java7çš„try-with-resourceså¯ä»¥ä¼˜é›…å…³é—­æ–‡ä»¶ï¼Œå¼‚å¸¸æ—¶è‡ªåŠ¨å…³é—­æ–‡ä»¶ï¼›è¯¦ç»†è§£è¯»https://stackoverflow.com/a/12665271
 	        BufferedWriter output0 = null;
 	        try {
 	        	FileReader reader = new FileReader(pathname);
-	             BufferedReader br = new BufferedReader(reader); // ½¨Á¢Ò»¸ö¶ÔÏó£¬Ëü°ÑÎÄ¼şÄÚÈİ×ª³É¼ÆËã»úÄÜ¶Á¶®µÄÓïÑÔ
+	             BufferedReader br = new BufferedReader(reader); // å»ºç«‹ä¸€ä¸ªå¯¹è±¡ï¼Œå®ƒæŠŠæ–‡ä»¶å†…å®¹è½¬æˆè®¡ç®—æœºèƒ½è¯»æ‡‚çš„è¯­è¨€
 	             String line;
-		            //ÍøÓÑÍÆ¼ö¸ü¼Ó¼ò½àµÄĞ´·¨
+		            //ç½‘å‹æ¨èæ›´åŠ ç®€æ´çš„å†™æ³•
 	                
 		            while ((line = br.readLine()) != null) {
-		                // Ò»´Î¶ÁÈëÒ»ĞĞÊı¾İ
+		                // ä¸€æ¬¡è¯»å…¥ä¸€è¡Œæ•°æ®
 		                output0=new BufferedWriter(new OutputStreamWriter(
-		                		new FileOutputStream(file0, true )));//¶ÁÈ¡Ò»¸ötxtÎÄ¼ş²¢ÇÒ½«ÆäĞ´ÈëÁíÒ»¸ötxtÎÄ¼ş£¬²»ÄÜ¸²¸ÇÔ­À´ÎÄ¼şÄÚÈİ
+		                		new FileOutputStream(file0, true )));//è¯»å–ä¸€ä¸ªtxtæ–‡ä»¶å¹¶ä¸”å°†å…¶å†™å…¥å¦ä¸€ä¸ªtxtæ–‡ä»¶ï¼Œä¸èƒ½è¦†ç›–åŸæ¥æ–‡ä»¶å†…å®¹
 //		                int num=0;
 //		                num+=line.length();
 //		                System.out.print(num);
 //		                output0.write(String.valueOf(num));
 //		                output0.write(line);
 		                int i=1;
-		                char[] str=line.toCharArray();//×Ö·û´®×ªÊı×é
+		                char[] str=line.toCharArray();//å­—ç¬¦ä¸²è½¬æ•°ç»„
 		                for(char hz:str){
 //		                	System.out.print(hz);
 		                	output0.write(hz);
@@ -100,22 +100,22 @@ public class CreateFiles {
 //		                		System.out.print(",");
 		                	if(i%14==0)
 //		                		System.out.println(".");
-		                		output0.write("¡£"+"\r\n");
+		                		output0.write("ã€‚"+"\r\n");
 		                	i++;
 		                }
 		                int count=0;
-		                System.out.println("ÇëÊäÈëĞèÒªÍ³¼Æ³öÏÖ´ÎÊıµÄ×Ö»ò´Ê£º");  
+		                System.out.println("è¯·è¾“å…¥éœ€è¦ç»Ÿè®¡å‡ºç°æ¬¡æ•°çš„å­—æˆ–è¯ï¼š");  
 		                Scanner scan=new Scanner(System.in);
-			            String str1= scan.next();;
+			            String str1= scan.next();
 			            while(line.indexOf(str1)!=-1){
-			                //¼ìË÷¼üÅÌ½ÓÊÕµÄ×Ö·û´®str£¬ÊÇ·ñ°üº¬ÓĞ×Ö·û´®str1= " "£¬
-			                //Èç¹ûÓĞÔò·µ»ØÒ»¸ö´óÓÚµÈÓÚ0µÄÏÂ±êË÷Òı
-			                //£¨ÕâÀï×¢ÒâÊÇ·µ»ØÏÂ±êË÷Òı£¬ÏÂ±êË÷ÒıÊÇ´Ó0¿ªÊ¼µÄ£©£¬Ã»ÓĞ·µ»Ø-1¡£
+			                //æ£€ç´¢é”®ç›˜æ¥æ”¶çš„å­—ç¬¦ä¸²strï¼Œæ˜¯å¦åŒ…å«æœ‰å­—ç¬¦ä¸²str1= " "ï¼Œ
+			                //å¦‚æœæœ‰åˆ™è¿”å›ä¸€ä¸ªå¤§äºç­‰äº0çš„ä¸‹æ ‡ç´¢å¼•
+			                //ï¼ˆè¿™é‡Œæ³¨æ„æ˜¯è¿”å›ä¸‹æ ‡ç´¢å¼•ï¼Œä¸‹æ ‡ç´¢å¼•æ˜¯ä»0å¼€å§‹çš„ï¼‰ï¼Œæ²¡æœ‰è¿”å›-1ã€‚
 			            	int c=line.indexOf(str1);
 			            	line=line.substring(c+str1.length());
 			            	count++;
 			            }
-			            output0.write("×Ö·û¡°"+str1+"¡±³öÏÖµÄ´ÎÊıÎª£º"+count+"\r\n");
+			            output0.write("å­—ç¬¦â€œ"+str1+"â€å‡ºç°çš„æ¬¡æ•°ä¸ºï¼š"+count+"\r\n");
 		            }
 		            
 		            
