@@ -62,6 +62,7 @@
      char[] str=line.toCharArray();
   
 > *  注意将字符串转数组。
+
 6.在CreateFiles类中的readFile()方法里继续实现统计某个字或词出现的次数使用while语句检索键盘接收的字符串str，并将检索到的次数写入TextA中。<br/>
 
     Scanner scan=new Scanner(System.in);
